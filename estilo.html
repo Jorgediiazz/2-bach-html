@@ -23,7 +23,7 @@
             background-color: black;
         }
         #bloque3{
-            color: yellow;
+            color: black;
             background-color: white;
         }
     </style>
@@ -35,8 +35,13 @@
     <div id="bloque2" class="bloque" onclick="alert('Soy bloque 2')")>
         <p>Esto es el bloque 1</p>
     </div>
-    <div id="bloque3" class="bloque" onclick="alert('Soy bloque 3')")>
-        <p>Esto es el bloque 3</p>
+    <div id="bloque3" class="bloque" onclick="func_bloque('bloque3')">
+        <p>Pulsa para saber cual bloque soy</p>
     </div>
+    <script>
+        function func_bloque(nombre_id){
+            alert(nombre_id);
+        }
+    </script>
 </body>
 </html>
